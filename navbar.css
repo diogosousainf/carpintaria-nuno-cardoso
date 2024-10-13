@@ -1,0 +1,95 @@
+/* NAVBAR*/
+.navbar {
+    padding: 1rem;
+    background-color: #F4F2ED;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("imagens/Cozinhas/c11.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 9999;
+    }
+
+    /* Sobreposição escura para destacar o texto */
+    .navbar-collapse::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Sobreposição escura */
+        z-index: 1;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .nav-link {
+        font-size: 2rem; /* Tamanho de fonte maior */
+        color: #fff !important;
+        margin: 1.5rem 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease, background-color 0.3s ease; /* Transição para hover */
+        padding: 10px 20px; /* Mais espaço ao redor do link */
+        border-radius: 5px;
+        z-index: 2;
+    }
+
+    .nav-link:hover {
+        color: #f0a500;
+    }
+
+    /* Botão para fechar o menu */
+    .close-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.5rem; /* Maior e mais destacável */
+        color: #fff;
+        cursor: pointer;
+        z-index: 3; /* Sempre acima de tudo */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para maior visibilidade */
+    }
+}
+/* Esconda o botão de fechar no desktop */
+@media (min-width: 769px) {
+    .close-menu {
+        display: none; /* Ocultar em resoluções acima de 768px */
+    }
+}
+/* NAVBAR*/
