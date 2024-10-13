@@ -18,10 +18,28 @@ body {
     left: 50%;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit: cover; /* Faz o vídeo cobrir toda a área, mantendo a proporção */
     transform: translate(-50%, -50%);
     z-index: -1;
-    pointer-events: none;
+    pointer-events: none; /* Desativa qualquer interação com o vídeo */
+}
+
+@media (max-width: 768px) {
+    .video-background {
+        height: 50vh; /* Diminui a altura do vídeo para metade da altura da tela */
+        object-fit: cover; /* Mantém o vídeo ajustado na tela sem distorção */
+    }
+}
+@media (max-width: 1200px) {
+    .video-background {
+        height: 80vh; /* Ajusta a altura para telas médias, como tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-background {
+        height: 40vh; /* Ajusta a altura para telas muito pequenas, como smartphones */
+    }
 }
 
 
