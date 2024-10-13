@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuno Cardoso Carpintaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+
+<!-- Header -->
+<header class="py-3">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/logonc.webp" alt="Nuno Cardoso Logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Empresa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section with Video Background -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="imagens/videohero.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+        <div class="text-white">
+            <!-- Conteúdo sobre o vídeo -->
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Produtos Section -->
+<section class="products py-5">
+    <div class="container text-center">
+        <h2 class="mb-5">Produtos</h2>
+        <div class="row">
+            <!-- Coluna da esquerda: Portas -->
+            <div class="col-md-4">
+                <div class="product-box position-relative">
+                    <img src="imagens/Portas/p17.webp" class="img-fluid" alt="Portas">
+                    <h3>Portas</h3>
+                </div>
+            </div>
+
+            <!-- Coluna central: Cozinhas em cima, Armários em baixo -->
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <div class="product-box position-relative">
+                            <img src="imagens/Cozinhas/c10.png" class="img-fluid" alt="Cozinhas">
+                            <h3>Cozinhas</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="product-box position-relative">
+                            <img src="imagens/Armários/A1.webp" class="img-fluid" alt="Armários">
+                            <h3>Armários</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna da direita: Carpintaria Geral -->
+            <div class="col-md-4">
+                <div class="product-box position-relative">
+                    <img src="imagens/Carpintaria-geral/17.webp" class="img-fluid" alt="Carpintaria Geral">
+                    <h3>Carpintaria Geral</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sustentabilidade Section -->
+<section class="sustainability py-5 position-relative">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <!-- Coluna da esquerda: Vídeo ocupando toda a altura -->
+            <div class="col-md-6 video-container">
+                <video autoplay muted loop playsinline class="video-full-screen">
+                    <source src="imagens/sustentabilidade.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
+
+            <!-- Coluna da direita: Texto com espaço para vídeo -->
+            <div class="col-md-6 text-center text-md-left py-5 px-4 position-relative">
+                <!-- Vídeo do lado direito (sobre o texto) -->
+                <div class="right-video-container position-absolute">
+                    <video autoplay muted loop playsinline class="video-right" style="display: none;"> <!-- Estilo de exemplo -->
+                        <source src="imagens/videodireito.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+
+                <!-- Texto de sustentabilidade -->
+                <h2>SUSTENTABILIDADE</h2>
+                <p class="lead">
+                    Desde a durabilidade dos nossos projetos até aos materiais que utilizamos, analisamos o que podemos fazer
+                    de diferente para minimizar o nosso impacto ambiental, enquanto continuamos a desenvolver produtos com design
+                    apelativo e com o objetivo de proporcionar conforto e bem estar.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--  Seção Design e Processo -->
+<section class="design-process py-5" style="background-image: url('imagens/wood.webp'); background-size: cover; background-position: center;">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Coluna da esquerda: Texto com fundo em madeira -->
+            <div class="col-md-6 text-white design-text">
+                <div class="p-5">
+                    <h2 class="mb-4">UM BOM DESIGN É UM BOM PROCESSO</h2>
+                    <p>
+                        Cada projeto é alvo de cuidadosa atenção. A qualidade e durabilidade dos materiais utilizados em cada peça
+                        combina com a fiabilidade dos processos industriais e a dedicação do trabalho artesanal. Todos os envolvidos
+                        na produção dos nossos artigos possuem uma longa experiência e as suas mãos hábeis garantem a atenção a cada
+                        detalhe, mesmo o menos visível.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Coluna da direita: Imagem -->
+            <div class="col-md-6">
+                <img src="imagens/designprocess.webp" alt="Ferramentas e Processo de Trabalho" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="py-4  text-dark">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Texto ou link na esquerda -->
+            <div class="col-md-4 text-center text-md-left">
+                <p class="mb-0">
+                    <a href="#" class="text-dark">Desenvolvido por DSoftware</a>
+                </p>
+            </div>
+
+            <!-- Logo no centro -->
+            <div class="col-md-4 text-center">
+                <img src="imagens/logo2.webp" alt="Nuno Cardoso Logo" style="height: 80px;">
+            </div>
+
+            <!-- Ícones das redes sociais na direita -->
+            <div class="col-md-4 text-center text-md-right">
+                <a href="https://pt-pt.facebook.com/CarpintariaNunocardoso/" target="_blank" class="text-dark mx-2">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=hfReztNL2B4" target="_blank" class="text-dark mx-2">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
