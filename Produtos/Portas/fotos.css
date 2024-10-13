@@ -1,0 +1,51 @@
+/* Exposição de Fotos */
+.exposicao-fotos {
+    background-color: #f4f2ed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Tamanho mínimo de 150px */
+    grid-auto-rows: 150px; /* Tamanho base de cada linha */
+    grid-gap: 10px; /* Espaço entre as imagens */
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que as imagens cubram todo o espaço sem distorção */
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Tornando algumas imagens maiores para criar o efeito mosaico */
+.img-container:nth-child(3n) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.img-container:nth-child(5n) {
+    grid-column: span 2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Para telas menores */
+    }
+
+    .img-container:nth-child(3n),
+    .img-container:nth-child(5n) {
+        grid-column: span 1;
+        grid-row: span 1; /* Imagens voltam ao tamanho padrão em telas pequenas */
+    }
+}
