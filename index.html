@@ -36,7 +36,7 @@
 
 
 <section class="hero">
-    <video loop  autoplay muted playsinline preload="auto" class="video-full-screen">
+    <video id="hero-video" loop autoplay muted playsinline preload="auto" class="video-full-screen">
         <source src="https://cdn.pixabay.com/video/2023/06/11/166808-835670743_large.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
@@ -44,6 +44,25 @@
         <img src="imagens/Cozinhas/c10.png" alt="Hero Placeholder">
     </noscript>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('hero-video');
+
+        // Tenta reproduzir o vídeo imediatamente
+        video.play().catch(function(error) {
+            console.log("Autoplay falhou, tentando simular clique para iniciar:", error);
+            // Simular um clique no vídeo para forçar a reprodução
+            video.muted = true; // Certifique-se de que o vídeo está mudo
+            video.play();
+        });
+    });
+</script>
+
+
+
+
+
 
 <!-- Produtos Section -->
 <section class="products py-5">
@@ -191,18 +210,7 @@
         </div>
     </div>
 </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var video = document.querySelector('video');
-        if (video) {
-            video.play().catch(function(error) {
-                console.log("Autoplay falhou no Safari:", error);
-            });
-        }
-    });
 
-
-</script>
 
 
 
