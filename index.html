@@ -36,7 +36,7 @@
 
 
 <section class="hero">
-    <video loop  autoplay muted playsinline  class="video-full-screen">
+    <video loop  autoplay muted playsinline preload="auto" class="video-full-screen">
         <source src="https://cdn.pixabay.com/video/2023/06/11/166808-835670743_large.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
@@ -195,12 +195,12 @@
     document.addEventListener('DOMContentLoaded', function() {
         var video = document.querySelector('video');
         if (video) {
-            video.muted = true; // Garantir que o vídeo esteja mutado
             video.play().catch(function(error) {
-                console.log("Autoplay falhou:", error);
+                console.log("Autoplay falhou no Safari:", error);
             });
         }
     });
+
 
 </script>
 
