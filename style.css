@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #F4F2ED; /* Cor de fundo do site */
+    background-color: #F4F2ED;
 }
 
 /*HERO*/
@@ -18,27 +18,27 @@ body {
     left: 50%;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Faz o vídeo cobrir toda a área, mantendo a proporção */
+    object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
-    pointer-events: none; /* Desativa qualquer interação com o vídeo */
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {
     .video-background {
-        height: 50vh; /* Diminui a altura do vídeo para metade da altura da tela */
-        object-fit: cover; /* Mantém o vídeo ajustado na tela sem distorção */
+        height: 50vh;
+        object-fit: cover;
     }
 }
 @media (max-width: 1200px) {
     .video-background {
-        height: 80vh; /* Ajusta a altura para telas médias, como tablets */
+        height: 80vh;
     }
 }
 
 @media (max-width: 480px) {
     .video-background {
-        height: 40vh; /* Ajusta a altura para telas muito pequenas, como smartphones */
+        height: 40vh;
     }
 }
 
@@ -51,8 +51,17 @@ body {
 /*HERO*/
 
 
-
 /* Produtos */
+.product-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-link:hover {
+    color: #e8d5ac;
+    text-decoration: underline;
+}
+
 .products h3 {
     font-size: 1.4rem;
     margin-top: 10px;
