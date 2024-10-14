@@ -45,23 +45,6 @@
     </noscript>
 </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var video = document.getElementById('hero-video');
-
-        // Tenta reproduzir o vídeo imediatamente
-        video.play().catch(function(error) {
-            console.log("Autoplay falhou, tentando simular clique para iniciar:", error);
-            // Simular um clique no vídeo para forçar a reprodução
-            video.muted = true; // Certifique-se de que o vídeo está mudo
-            video.play();
-        });
-    });
-</script>
-
-
-
-
 
 
 <!-- Produtos Section -->
