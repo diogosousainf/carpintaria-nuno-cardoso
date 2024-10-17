@@ -35,15 +35,48 @@
 
 
 
-<section class="hero">
-    <video id="hero-video" loop autoplay muted playsinline preload="auto" class="video-full-screen">
-        <source src="https://cdn.pixabay.com/video/2023/06/11/166808-835670743_large.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
-    <noscript>
-        <img src="imagens/Cozinhas/c10.png" alt="Hero Placeholder">
-    </noscript>
+<!-- Carrossel Hero com efeito de fade -->
+<section id="hero-carousel" class="hero carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+    <!-- Indicadores do carrossel (pontos de navegação) -->
+    <ol class="carousel-indicators">
+        <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#hero-carousel" data-slide-to="1"></li>
+        <li data-target="#hero-carousel" data-slide-to="2"></li>
+        <li data-target="#hero-carousel" data-slide-to="3"></li>
+        <li data-target="#hero-carousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Imagens do carrossel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagens/Cozinhas/cweb2.jpg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Cozinhas/cozinhaWeb.jpg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Carpintaria-geral/15.webp" class="d-block w-100" alt="Imagem 3">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Carpintaria-geral/2.webp" class="d-block w-100" alt="Imagem 4">
+        </div>
+        <div class="carousel-item">
+            <img src="imagens/Carpintaria-geral/7.webp" class="d-block w-100" alt="Imagem 5">
+        </div>
+    </div>
+
+    <!-- Controles de navegação -->
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
 </section>
+
+
 
 
 

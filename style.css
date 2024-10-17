@@ -5,49 +5,34 @@ body {
     background-color: #F4F2ED;
 }
 
-/*HERO*/
 .hero {
-    position: relative;
-    height: 500px;
+    height: 100vh;
     overflow: hidden;
 }
 
-.video-background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
+.carousel-item {
     height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    pointer-events: none;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block; /* Garante que a imagem ativa seja exibida corretamente */
+    opacity: 0;
 }
 
-@media (max-width: 768px) {
-    .video-background {
-        height: 50vh;
-        object-fit: cover;
-    }
-}
-@media (max-width: 1200px) {
-    .video-background {
-        height: 80vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .video-background {
-        height: 40vh;
-    }
+.carousel-item.active {
+    opacity: 1;
 }
 
 
-@media (max-width: 768px) {
-    .hero {
-        height: 300px;
-    }
-}
 /*HERO*/
 
 
