@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
 </head>
 <body>
 
@@ -23,10 +25,10 @@
             <!-- Botão para fechar -->
             <span class="close-menu">&times;</span>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Empresa</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactos">Contatos</a></li>
             </ul>
         </div>
     </nav>
@@ -81,12 +83,17 @@
 
 
 <!-- Produtos Section -->
-<section class="products py-5">
+<!-- Título com linha abaixo -->
+<section id="products" class="products py-5"  data-aos="fade-up">
     <div class="container text-center">
-        <h2 class="mb-5">Produtos</h2>
-        <div class="row">
+        <h2 class="section-title">PRODUTOS</h2>
+        <div class="line-under-title"></div>
+    </div>
+    <!-- Conteúdo dos produtos aqui -->
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
             <!-- Coluna da esquerda: Portas -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="product-box position-relative">
                     <a href="Produtos/Portas/portas.html" class="product-link">
                         <img src="imagens/Portas/p17.webp" class="img-fluid" alt="Portas">
@@ -96,7 +103,7 @@
             </div>
 
             <!-- Coluna central: Cozinhas em cima, Armários em baixo -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                 <div class="row">
                     <div class="col-md-12 mb-4">
                         <div class="product-box position-relative">
@@ -118,7 +125,7 @@
             </div>
 
             <!-- Coluna da direita: Carpintaria Geral -->
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
                 <div class="product-box position-relative">
                     <a href="#" class="product-link">
                         <img src="imagens/Carpintaria-geral/17.webp" class="img-fluid" alt="Carpintaria Geral">
@@ -130,99 +137,65 @@
     </div>
 </section>
 
-<!-- Trabalhos Recentes Section -->
-<section class="recent-works py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Trabalhos Recentes</h2>
-        <div class="row">
-            <!-- Trabalho 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="work-box position-relative">
-                    <img src="imagens/Cozinhas/cweb2.jpg" class="img-fluid" alt="Trabalho 1">
-                    <div class="work-info">
-                        <h3>Projeto de Cozinha</h3>
-                        <p>Cozinhas modernas e funcionais.</p>
-                        <a href="#" class="btn btn-light">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Trabalho 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="work-box position-relative">
-                    <img src="imagens/Cozinhas/cweb2.jpg" class="img-fluid" alt="Trabalho 2">
-                    <div class="work-info">
-                        <h3>Armários Personalizados</h3>
-                        <p>Design exclusivo para cada cliente.</p>
-                        <a href="#" class="btn btn-light">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Trabalho 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="work-box position-relative">
-                    <img src="imagens/Cozinhas/cweb2.jpg" class="img-fluid" alt="Trabalho 3">
-                    <div class="work-info">
-                        <h3>Portas de Madeira</h3>
-                        <p>Portas elegantes e resistentes.</p>
-                        <a href="#" class="btn btn-light">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Sustentabilidade Section -->
-<!-- Seção de Sustentabilidade -->
-<section class="sustainability py-5 position-relative">
-    <div class="container-fluid p-0">
-        <div class="image-container">
-            <div class="text-overlay">
-                <h2 class="design-title">SUSTENTABILIDADE</h2>
-                <p>
-                    Desde a durabilidade dos nossos projetos até aos materiais que utilizamos, analisamos o que podemos fazer
-                    de diferente para minimizar o nosso impacto ambiental, enquanto continuamos a desenvolver produtos com design
-                    apelativo e com o objetivo de proporcionar conforto e bem estar.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Sustentabilidade Section -->
 
 
 
 
 
-
-
-
-
-<!--  Seção Design e Processo -->
-<section class="design-process py-5" style="background-image: url('imagens/Carpintaria-geral/2.webp'); background-size: cover; background-position: center;">
+<!-- Seção Design e Processo -->
+<!-- Seção Design e Processo -->
+<section class="design-process py-5" data-aos="fade-up">
     <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-center">
             <!-- Coluna da esquerda: Texto com fundo em madeira -->
-            <div class="col-md-6 text-white design-text">
+            <div class="col-md-6 text-white design-text" data-aos="fade-right">
                 <div class="p-5">
                     <h2 class="mb-4">UM BOM DESIGN É UM BOM PROCESSO</h2>
                     <p>
                         Cada projeto é alvo de cuidadosa atenção. A qualidade e durabilidade dos materiais utilizados em cada peça
-                        combina com a fiabilidade dos processos industriais e a dedicação do trabalho artesanal. Todos os envolvidos
-                        na produção dos nossos artigos possuem uma longa experiência e as suas mãos hábeis garantem a atenção a cada
-                        detalhe, mesmo o menos visível.
+                        combina com a fiabilidade dos processos industriais e a dedicação do trabalho artesanal.
                     </p>
                 </div>
             </div>
 
             <!-- Coluna da direita: Imagem -->
-            <div class="col-md-6">
-                <img src="imagens/designprocess.webp" alt="Ferramentas e Processo de Trabalho" class="img-fluid">
+            <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left">
+                <img src="imagens/wood-working-2385634.jpg" alt="Ferramentas e Processo de Trabalho" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
+
+<!-- Seção Design e Processo -->
+
+
+<!-- Seção Bio da Empresa -->
+<section id="empresa" class="bio-section" data-aos="fade-up">
+    <div class="container-fluid ">
+        <div class="row  align-items-center">
+            <!-- Coluna da esquerda: Imagem ou vídeo -->
+            <div class="col-md-6 p-0" data-aos="fade-right">
+                <div class="bio-media h-100">
+                    <img src="imagens/Oficina.webp" class="img-fluid h-100 w-100" alt="Imagem da Empresa">
+                </div>
+            </div>
+
+            <!-- Coluna da direita: Texto da Bio -->
+            <div class="col-md-6 d-flex align-items-center" data-aos="fade-left">
+                <div class="bio-text text-center text-md-left p-5">
+                    <h2 class="bio-title mb-4">A Empresa</h2>
+                    <p class="bio-description">
+                        Somos uma empresa Portuguesa fundada em 2002 e orgulhamo-nos de associar a evolução à tradição.
+                        Queremos mostrar que todos os nossos produtos dão um passo em frente.
+                    </p>
+                    <p class="bio-quote">"Andar e fazer andar..."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seção Bio da Empresa -->
+
 
 
 
@@ -262,6 +235,10 @@
 
 <!-- Scripts -->
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
