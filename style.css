@@ -161,7 +161,6 @@ body {
 }
 
 .design-process .design-text {
-    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 40px;
     max-width: 90%; /* Limita a largura do texto */
@@ -215,71 +214,64 @@ body {
 
 
 /* Bio da Empresa */
-/* Bio da Empresa - Full Screen */
+/* Bio da Empresa */
 .bio-section {
-    height: 100vh; /* Ocupa a altura total da tela */
-    display: flex;
-    align-items: center;
+    padding: 80px 0;
+    background-color: #f4f2ed;
 }
 
-.bio-media {
-    height: 100%;
+.bio-text {
+    padding: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.bio-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.divider {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin: 20px auto; /* Centraliza a linha */
+}
+
+.bio-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    text-align: center;
 }
 
 .bio-media img {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    height: auto;
 }
 
-.bio-text {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    padding: 40px;
-    color: white;
-}
-
-.bio-title {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: #C2B49A;
-}
-
-.bio-description {
-    font-size: 1.4rem;
-    line-height: 1.8;
-    color: #E0D7C2;
-    margin-bottom: 20px;
-}
-
-.bio-quote {
-    font-style: italic;
-    font-size: 1.8rem;
-    color: #C2B49A;
-}
-
-/* Responsividade */
+/* Ajuste de layout em telas menores */
 @media (max-width: 768px) {
     .bio-text {
+        padding: 20px;
         text-align: center;
     }
 
     .bio-title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .bio-description {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .bio-quote {
-        font-size: 1.4rem;
+    .bio-section {
+        padding: 50px 0;
     }
 }
-
-
 
 
 
