@@ -68,15 +68,15 @@
             </div>
             <div class="col-md-4 col-sm-6 mb-4 grid-item">
                 <div class="img-container">
-                    <a href="../../imagens/Portas/p3.webp" class="glightbox" data-gallery="portas">
-                        <img src="../../imagens/Portas/p3.webp" alt="Porta 3" class="img-fluid">
+                    <a href="../../imagens/Portas/p31.webp" class="glightbox" data-gallery="portas">
+                        <img src="../../imagens/Portas/p31.webp" alt="Porta 3" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4 grid-item">
                 <div class="img-container">
-                    <a href="../../imagens/Portas/p3.webp" class="glightbox" data-gallery="portas">
-                        <img src="../../imagens/Portas/p3.webp" alt="Porta 3" class="img-fluid">
+                    <a href="../../imagens/Portas/p23.webp" class="glightbox" data-gallery="portas">
+                        <img src="../../imagens/Portas/p23.webp" alt="Porta 3" class="img-fluid">
                     </a>
                 </div>
             </div>
@@ -150,6 +150,31 @@
                     </a>
                 </div>
             </div>
+
+            <div class="col-md-4 col-sm-6 mb-4 grid-item">
+                <div class="img-container">
+                    <a href="../../imagens/Portas/p32.webp" class="glightbox" data-gallery="portas">
+                        <img src="../../imagens/Portas/p32.webp" alt="Porta 3" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4 grid-item">
+                <div class="img-container">
+                    <a href="../../imagens/Portas/p19.webp" class="glightbox" data-gallery="portas">
+                        <img src="../../imagens/Portas/p19.webp" alt="Porta 3" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4 grid-item">
+                <div class="img-container">
+                    <a href="../../imagens/Portas/p3.webp" class="glightbox" data-gallery="portas">
+                        <img src="../../imagens/Portas/p3.webp" alt="Porta 3" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
             <!-- Continue o padrão para as outras imagens -->
         </div>
     </div>
@@ -197,19 +222,30 @@
 <!-- Adicione o Masonry JS -->
 
 
-<!-- Script para inicializar o Glightbox -->
 <script>
     // Inicializa o Masonry após o carregamento das imagens
-    var grid = document.querySelector('.grid');
-    var msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-item',
-        percentPosition: true
-    });
-    const lightbox = GLightbox({
-        selector: '.glightbox'
+    document.addEventListener('DOMContentLoaded', function () {
+        var grid = document.querySelector('.grid');
+
+        // Aguarda até que todas as imagens sejam carregadas antes de inicializar o Masonry
+        var msnry;
+        imagesLoaded(grid, function () {
+            msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-item',
+                percentPosition: true
+            });
+        });
+
+        // Inicializa o GLightbox para as galerias
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
     });
 </script>
+
+<!-- Certifique-se de carregar o script imagesLoaded -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 
 
