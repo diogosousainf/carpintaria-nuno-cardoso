@@ -1,12 +1,7 @@
-/* NAVBAR*/
+/* NAVBAR */
 .navbar {
     padding: 1rem;
     border-bottom: 1px solid #ddd;
-}
-
-.navbar-brand img {
-    max-height: 60px;
-
 }
 
 .navbar-toggler {
@@ -15,29 +10,65 @@
 }
 
 .navbar-toggler-icon {
-    color: #333;
     font-size: 1.5rem;
 }
 
+/* Link do Submenu de Produtos */
+.nav-link {
+    color: #ffffff; /* Melhor visibilidade */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #f0a500;
+    transition: color 0.3s ease;
+}
+
+/* Submenu (para mobile) */
+#submenuProdutos {
+    padding-left: 20px;
+}
+
+#submenuProdutos .dropdown-item {
+    font-size: 1.2rem;
+    color: #785e1c; /* Mais visível */
+    padding: 5px 10px;
+    display: block;
+}
+
+#submenuProdutos .dropdown-item:hover {
+    color: #fff;
+    background-color: #b6974e;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+    #submenuProdutos .dropdown-item {
+        color: #ffffff; /* Mais visível */
+    }
+
+    #submenuProdutos .dropdown-item:hover {
+        color: #fff;
+        background-color: #b6974e;
+    }
     .navbar-collapse {
+        background-size: cover;
+        background-position: center;
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-image: url("imagens/Cozinhas/c11.png");
-        background-size: cover;
-        background-position: center;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow: hidden; /* Impede scroll na navbar */
         transition: all 0.2s ease;
         z-index: 9999;
     }
 
-    /* Sobreposição escura para destacar o texto */
+    /* Sobreposição escura para garantir contraste */
     .navbar-collapse::before {
         content: '';
         position: absolute;
@@ -45,51 +76,53 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6); /* Sobreposição escura */
+        background-color: rgba(0, 0, 0, 0.85); /* Deixa o fundo mais escuro para contraste */
         z-index: 1;
     }
 
     .navbar-nav {
+        background-image: url("imagens/nav-wood.jpg");
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
+        height: 100vh; /* Ocupa a tela inteira */
         z-index: 2;
+        background-size: cover; /* Garante que a imagem ocupe toda a área */
+        background-attachment: fixed; /* Mantém a imagem fixa no lugar */
     }
 
     .nav-link {
-        font-size: 2rem; /* Tamanho de fonte maior */
+        font-size: 2rem;
         color: #fff !important;
         margin: 1.5rem 0;
         text-transform: uppercase;
         letter-spacing: 1px;
-        transition: color 0.3s ease, background-color 0.3s ease; /* Transição para hover */
-        padding: 10px 20px; /* Mais espaço ao redor do link */
+        transition: color 0.3s ease, background-color 0.3s ease;
+        padding: 10px 20px;
         border-radius: 5px;
-        z-index: 2;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para melhor visibilidade */
     }
 
     .nav-link:hover {
         color: #f0a500;
     }
 
-    /* Botão para fechar o menu */
     .close-menu {
         position: absolute;
         top: 20px;
         right: 20px;
-        font-size: 2.5rem; /* Maior e mais destacável */
+        font-size: 2.5rem;
         color: #fff;
         cursor: pointer;
-        z-index: 3; /* Sempre acima de tudo */
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para maior visibilidade */
+        z-index: 3;
     }
 }
-/* Esconda o botão de fechar no desktop */
-@media (min-width: 769px) {
+
+/* Esconde o botão fechar em telas maiores */
+@media (min-width: 768px) {
     .close-menu {
-        display: none; /* Ocultar em resoluções acima de 768px */
+        display: none;
     }
 }
-/* NAVBAR*/
