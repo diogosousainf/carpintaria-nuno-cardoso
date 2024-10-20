@@ -22,11 +22,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Botão para fechar -->
             <span class="close-menu">&times;</span>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html">Produtos</a></li>
+
+                <!-- Produtos com Submenu Expansível -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="produtosDropdown" role="button" data-toggle="collapse" data-target="#submenuProdutos" aria-expanded="false">
+                        Produtos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul id="submenuProdutos" class="collapse">
+                        <li><a class="dropdown-item" href="Produtos/Portas/portas.html">Portas</a></li>
+                        <li><a class="dropdown-item" href="Produtos/Cozinhas/cozinhas.html">Cozinhas</a></li>
+                        <li><a class="dropdown-item" href="Produtos/Armarios/armarios.html">Armários</a></li>
+                        <li><a class="dropdown-item" href="Produtos/CG/carpintariageral.html">Carpintaria Geral</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a class="nav-link" href="index.html">Empresa</a></li>
                 <li class="nav-item"><a class="nav-link" href="contactos.html">Contatos</a></li>
             </ul>
@@ -36,7 +48,7 @@
 
 
 
-<!-- Zona de Contato Melhorada -->
+<!-- Contato  -->
 <section class="contact-section py-5" id="contact">
     <div class="container">
         <div class="row align-items-center">
@@ -65,7 +77,7 @@
     </div>
 </section>
 
-<!-- Estilos CSS melhorados -->
+<!-- Estilos CSS  -->
 <style>
     .contact-info {
         background-image: url("https://cdn.pixabay.com/photo/2013/02/21/19/12/lumber-84678_1280.jpg");

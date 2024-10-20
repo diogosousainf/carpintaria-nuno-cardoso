@@ -10,28 +10,42 @@
     <link rel="stylesheet" href="../../navbar.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../fotos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
 
 <header class="py-3">
     <nav class="navbar navbar-expand-lg navbar-light container">
         <a class="navbar-brand" href="../../index.html">
-            <img src="../../imagens/logonc.webp"  style="height: 70px;">
+            <img src="../../imagens/logonc.webp" alt="Nuno Cardoso Logo" style="height: 70px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+            <span class="close-menu">&times;</span>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../index.html">Produtos</a></li>
+
+                <!-- Produtos com Submenu Expansível -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="produtosDropdown" role="button" data-toggle="collapse" data-target="#submenuProdutos" aria-expanded="false">
+                        Produtos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul id="submenuProdutos" class="collapse">
+                        <li><a class="dropdown-item" href="../../Produtos/Portas/portas.html">Portas</a></li>
+                        <li><a class="dropdown-item" href="../../Produtos/Cozinhas/cozinhas.html">Cozinhas</a></li>
+                        <li><a class="dropdown-item" href="../../Produtos/Armarios/armarios.html">Armários</a></li>
+                        <li><a class="dropdown-item" href="../../Produtos/CG/carpintariageral.html">Carpintaria Geral</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Empresa</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../index.html">Contatos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../contactos.html">Contatos</a></li>
             </ul>
         </div>
     </nav>
 </header>
-
 
 
 <!-- Seção de Exposição de Fotos -->

@@ -5,9 +5,24 @@ body {
     background-color: #ECE5D7;
 }
 
+/* Corrige a largura e o overflow do carrossel */
 .hero {
     height: 100vh;
     overflow: hidden;
+    padding: 0; /* Remove padding extra */
+    margin: 0; /* Remove margens extras */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100vw; /* Garante que a imagem ocupe 100% da viewport */
+    height: 100vh; /* Garante que a imagem ocupe 100% da altura da viewport */
+    object-fit: cover;
 }
 
 .carousel-item {
@@ -16,22 +31,25 @@ body {
     background-position: center;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Remove possíveis margens e padding do container */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita overflow horizontal */
 }
+
+/* Garante que o layout seja 100% responsivo */
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
-    display: block; /* Garante que a imagem ativa seja exibida corretamente */
+    display: block;
+    width: 100%; /* Garante que a imagem ocupe 100% da largura */
     opacity: 0;
 }
 
 .carousel-item.active {
     opacity: 1;
 }
-
 
 /*HERO*/
 
@@ -173,19 +191,34 @@ body {
 }
 
 @media (max-width: 768px) {
-    .design-process .design-text,
-    .design-process img {
-        padding: 0;
-        margin: 0;
-        text-align: center;
+    .design-process {
+        flex-direction: column;
+        padding: 20px 0;
     }
+
+    .design-process .design-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .design-process h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .design-process p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
     .design-process img {
-        width: 100vw;
-        height: 30vh;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
     }
 }
 
+/* Estilo para Texto */
 .design-process h2 {
     font-family: 'Arial', sans-serif;
     font-weight: 700;
@@ -209,6 +242,7 @@ body {
     color: #9E8460;
     font-weight: bold;
 }
+
 
 
 

@@ -16,22 +16,35 @@
 <header class="py-3">
     <nav class="navbar navbar-expand-lg navbar-light container">
         <a class="navbar-brand" href="../../index.html">
-            <img src="../../imagens/logonc.webp"  style="height: 70px;">
+            <img src="../../imagens/logonc.webp" alt="Nuno Cardoso Logo" style="height: 70px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+            <span class="close-menu">&times;</span>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../index.html">Produtos</a></li>
+
+                <!-- Produtos com Submenu Expansível -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="produtosDropdown" role="button" data-toggle="collapse" data-target="#submenuProdutos" aria-expanded="false">
+                        Produtos <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul id="submenuProdutos" class="collapse">
+                        <li><a class="dropdown-item" href="../../Produtos/Portas/portas.html">Portas</a></li>
+                        <li><a class="dropdown-item" href="../../Produtos/Cozinhas/cozinhas.html">Cozinhas</a></li>
+                        <li><a class="dropdown-item" href="../../Produtos/Armarios/armarios.html">Armários</a></li>
+                        <li><a class="dropdown-item" href="../../Produtos/CG/carpintariageral.html">Carpintaria Geral</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Empresa</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../index.html">Contatos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../contactos.html">Contatos</a></li>
             </ul>
         </div>
     </nav>
 </header>
-
 
 
 <!-- Seção de Exposição de Fotos - Armários -->
@@ -80,39 +93,33 @@
             </div>
             <div class="col-md-4 col-sm-6 mb-4 grid-item">
                 <div class="img-container">
-                    <a href="../../imagens/Armários/A6.webp" class="glightbox" data-gallery="armarios">
-                        <img src="../../imagens/Armários/A6.webp" alt="Armário 6" class="img-fluid">
+                    <a href="../../imagens/Armários/ar1.jpg" class="glightbox" data-gallery="armarios">
+                        <img src="../../imagens/Armários/ar1.jpg" alt="Armário 6" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4 grid-item">
                 <div class="img-container">
-                    <a href="../../imagens/Armários/A7.webp" class="glightbox" data-gallery="armarios">
-                        <img src="../../imagens/Armários/A7.webp" alt="Armário 7" class="img-fluid">
+                    <a href="../../imagens/Armários/ar2.jpg" class="glightbox" data-gallery="armarios">
+                        <img src="../../imagens/Armários/ar2.jpg" alt="Armário 7" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4 grid-item">
                 <div class="img-container">
-                    <a href="../../imagens/Armários/A8.webp" class="glightbox" data-gallery="armarios">
-                        <img src="../../imagens/Armários/A8.webp" alt="Armário 8" class="img-fluid">
+                    <a href="../../imagens/Armários/ar3.jpg" class="glightbox" data-gallery="armarios">
+                        <img src="../../imagens/Armários/ar3.jpg" alt="Armário 8" class="img-fluid">
                     </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-4 grid-item">
                 <div class="img-container">
-                    <a href="../../imagens/Armários/A9.webp" class="glightbox" data-gallery="armarios">
-                        <img src="../../imagens/Armários/A9.webp" alt="Armário 9" class="img-fluid">
+                    <a href="../../imagens/Armários/ar4.jpg" class="glightbox" data-gallery="armarios">
+                        <img src="../../imagens/Armários/ar4.jpg" alt="Armário 9" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-4 grid-item">
-                <div class="img-container">
-                    <a href="../../imagens/Armários/A10.webp" class="glightbox" data-gallery="armarios">
-                        <img src="../../imagens/Armários/A10.webp" alt="Armário 10" class="img-fluid">
-                    </a>
-                </div>
-            </div>
+
             <!-- Continue o padrão para as outras imagens -->
         </div>
     </div>
